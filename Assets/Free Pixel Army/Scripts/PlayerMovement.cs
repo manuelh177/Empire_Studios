@@ -6,8 +6,9 @@ public class PlayerMovement : MonoBehaviour
 {
 
     private float horizontal;
-    private float speed = 1f;
+    private float speed = 1.25f;
     private float jumpingPower = 5f;
+    private int jumpCount;
     private bool isFacingRigt = true;
 
     [SerializeField] private Rigidbody2D rb;
@@ -20,10 +21,12 @@ public class PlayerMovement : MonoBehaviour
 
         horizontal = Input.GetAxisRaw("Horizontal");
 
-        if (Input.GetButtonDown("Jump") && IsGrounded())
+        if (Input.GetButtonDown("Jump") && (IsGrounded() || jumpCount < 2))
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+            jumpCount++;
         }
+
 
         if (Input.GetButtonDown("Jump") && rb.velocity.y > 0f)
         {
@@ -42,8 +45,17 @@ public class PlayerMovement : MonoBehaviour
 
     private bool IsGrounded()
     {
-        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        bool grounded = Physics2D.OverlapCircle(groundCheck.position, 0.05f, groundLayer);
+
+        if(grounded)
+        {
+            jumpCount = 0;
+        }
+
+        return grounded;
     }
+
+
 
 
     private void Flip()
@@ -59,3 +71,4 @@ public class PlayerMovement : MonoBehaviour
 
     }
 }
+
