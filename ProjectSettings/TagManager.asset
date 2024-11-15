@@ -11,16 +11,10 @@ TagManager:
   - 
   - Water
   - UI
-  - Ground
-<<<<<<< Updated upstream
   - 
   - 
   - 
-=======
-  - PlayerBounds
-  - Player
-  - Player equipment
->>>>>>> Stashed changes
+  - 
   - 
   - 
   - 
@@ -46,10 +40,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Player
-    uniqueID: 683234345
-    locked: 0
-  - name: Player equipment
-    uniqueID: 1052122065
     locked: 0
