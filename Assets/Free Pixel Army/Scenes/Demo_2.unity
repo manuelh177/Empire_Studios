@@ -443,7 +443,7 @@ MonoBehaviour:
   groundCheck: {fileID: 1086666213}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
 --- !u!61 &751856772
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1495,7 +1495,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1052122065
-  m_SortingLayer: 2
+
   m_SortingOrder: 0
   m_Sprite: {fileID: 5601323976189978565, guid: 2edfd0eb34e1fa349824f67025b135d3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
