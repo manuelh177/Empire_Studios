@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
 
         horizontal = Input.GetAxisRaw("Horizontal");
 
-        if (Input.GetButtonDown("Jump") && (IsGrounded() || jumpCount < 1))
+        if (Input.GetButtonDown("Jump") && (IsGrounded() || jumpCount < 2))
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
             jumpCount++;
