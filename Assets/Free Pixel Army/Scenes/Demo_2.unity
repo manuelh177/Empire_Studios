@@ -443,7 +443,7 @@ MonoBehaviour:
   groundCheck: {fileID: 1086666213}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
 --- !u!61 &751856772
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1477,7 +1477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2065c1ab9092c284cb7bd4761403cde1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 1861991242730230196, guid: a4260f7aef1fc1944bb4f961bde73e05, type: 3}
+  bullet: {fileID: 1861991242730230196, guid: e01b5cc6acbcdb542a9bf3509b285e28, type: 3}
   bulletTransform: {fileID: 2028361359}
   canFire: 1
   timeBetweenFiring: 0.8
@@ -1731,7 +1731,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1052122065
-
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 5601323976189978565, guid: 2edfd0eb34e1fa349824f67025b135d3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
