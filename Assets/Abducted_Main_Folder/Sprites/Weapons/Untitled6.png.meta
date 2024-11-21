@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 536f0a72cccbc29458eab1a52b628ec7
+guid: 9a34c4e3a06251149bc925df240ee825
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,7 +95,52 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Untitled6_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1280
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 90, y: 4}
+        - {x: 72, y: 4}
+        - {x: 72, y: -14}
+        - {x: -54, y: -14}
+        - {x: -54, y: 4}
+        - {x: -144, y: 4}
+        - {x: -144, y: -68}
+        - {x: -126, y: -68}
+        - {x: -126, y: -104}
+        - {x: -216, y: -104}
+        - {x: -216, y: 58}
+        - {x: -234, y: 58}
+        - {x: -234, y: 94}
+        - {x: -216, y: 94}
+        - {x: -216, y: 112}
+        - {x: -180, y: 112}
+        - {x: -180, y: 130}
+        - {x: -126, y: 130}
+        - {x: -126, y: 112}
+        - {x: -54, y: 112}
+        - {x: -54, y: 130}
+        - {x: 72, y: 130}
+        - {x: 72, y: 112}
+        - {x: 90, y: 112}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5623dfaaa931f09439f75e6fc20e3cc8
+      internalID: -1326537520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +151,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Untitled6_0: -1326537520
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
