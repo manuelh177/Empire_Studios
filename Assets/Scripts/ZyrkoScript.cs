@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class ZyrkoScript : MonoBehaviour
 {
-    public Health zyrko;
-    public Health player;
+    private Health zyrko;
+    //public Health player;
     // Start is called before the first frame update
     void Start()
     {
-        
+        zyrko = GetComponent<Health>();
     }
 
     // Update is called once per frame
@@ -30,9 +30,14 @@ public class ZyrkoScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-                if(collision.collider.CompareTag("Player"))
+        if(collision.collider.CompareTag("Player"))
         {
-            player.TakeDamage(1);
+            var healthComponent = collision.collider.GetComponent<Health>();
+            if(healthComponent != null)
+            {
+                healthComponent.TakeDamage(1);
+            }
+            
         }
     }
 }

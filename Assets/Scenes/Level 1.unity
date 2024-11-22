@@ -1994,7 +1994,7 @@ Transform:
   m_GameObject: {fileID: 1057902814}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.7, y: 0.86, z: 0}
+  m_LocalPosition: {x: 0.687, y: 1.331, z: 0}
   m_LocalScale: {x: 0.21727143, y: 0.24206196, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3437,7 +3437,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2133490499}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 10ec3f6008a0d4df89a5739125952323, type: 3}
   m_Name: 
@@ -3445,8 +3445,8 @@ MonoBehaviour:
   currentHealth: 0
   maxHealth: 10
   isPlayer: 1
-  iFramesDuration: 0
-  numberOfFlashes: 0
+  iFramesDuration: 2
+  numberOfFlashes: 4
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

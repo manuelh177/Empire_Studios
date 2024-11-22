@@ -36,7 +36,7 @@ public class Health : MonoBehaviour
         }
         else if (isPlayer)
         {
-            //StartCoroutine(Invulnerability());
+            StartCoroutine(Invulnerability());
         }
     }
 
@@ -50,5 +50,16 @@ public class Health : MonoBehaviour
         Destroy(gameObject);
     }
 
-
+    private IEnumerator Invulnerability()
+    {
+        Physics2D.IgnoreLayerCollision(6, 7, true);
+        for (int i = 0; i < numberOfFlashes; i++)
+        {
+            sprite.color = new Color(1, 0, 0, 0.5f);
+            yield return new WaitForSeconds(iFramesDuration / (numberOfFlashes * 2));
+            sprite.color = new Color(1, 1, 1, 1);
+            yield return new WaitForSeconds(iFramesDuration / (numberOfFlashes * 2));
+        }
+        Physics2D.IgnoreLayerCollision(6, 7, false);
+    }
 }
