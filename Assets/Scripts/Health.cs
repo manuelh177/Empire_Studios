@@ -9,10 +9,15 @@ public class Health : MonoBehaviour
     public int maxHealth = 10;
     public bool isPlayer;
 
+
+
     [Header("iFrames")]
     public float iFramesDuration;
     public int numberOfFlashes;
     private SpriteRenderer sprite;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
