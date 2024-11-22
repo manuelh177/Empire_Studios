@@ -1510,6 +1510,8 @@ GameObject:
   - component: {fileID: 817114594}
   - component: {fileID: 817114593}
   - component: {fileID: 817114592}
+  - component: {fileID: 817114598}
+  - component: {fileID: 817114599}
   m_Layer: 0
   m_Name: Boss_1
   m_TagString: Untagged
@@ -1679,12 +1681,45 @@ Transform:
   m_GameObject: {fileID: 817114591}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.826, y: -1.832, z: 0.066291206}
-  m_LocalScale: {x: 0.28617737, y: 0.24582984, z: 1}
+  m_LocalPosition: {x: 19.897, y: -1.818, z: 0.066291206}
+  m_LocalScale: {x: 0.3493367, y: 0.2941354, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &817114598
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817114591}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c5de5a14dd4b1664387462c5744f70f1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &817114599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817114591}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45578f77d2e78104781316b836806b9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &851330465
 GameObject:
   m_ObjectHideFlags: 0
