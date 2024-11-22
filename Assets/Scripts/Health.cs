@@ -9,6 +9,9 @@ public class Health : MonoBehaviour
     public int maxHealth = 10;
     public bool isPlayer;
 
+    [Header("UI")]
+    public HealthBar healthBar;
+
     [Header("iFrames")]
     public float iFramesDuration;
     public int numberOfFlashes;
@@ -18,6 +21,11 @@ public class Health : MonoBehaviour
     {
         currentHealth = maxHealth;
         sprite = GetComponent<SpriteRenderer>();
+        if(healthBar != null)
+        {
+            healthBar.setMaxHealth(maxHealth);
+        }
+        
     }
 
     public void TakeDamage(int amt)
@@ -38,6 +46,7 @@ public class Health : MonoBehaviour
         {
             StartCoroutine(Invulnerability());
         }
+        healthBar.setHealth(currentHealth);
     }
 
     public void PlayerDeath()
