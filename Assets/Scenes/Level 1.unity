@@ -1295,7 +1295,6 @@ GameObject:
   m_Component:
   - component: {fileID: 851330466}
   - component: {fileID: 851330468}
-  - component: {fileID: 851330467}
   m_Layer: 6
   m_Name: Aim
   m_TagString: Untagged
@@ -1319,22 +1318,6 @@ Transform:
   - {fileID: 1587426198}
   m_Father: {fileID: 2133490503}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &851330467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 851330465}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7555d42e26a0bce4a971ef785b24e419, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  groundCheck: {fileID: 0}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!114 &851330468
 MonoBehaviour:
   m_ObjectHideFlags: 0
