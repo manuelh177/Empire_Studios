@@ -16,6 +16,9 @@ public class Health : MonoBehaviour
     public float iFramesDuration;
     public int numberOfFlashes;
     private SpriteRenderer sprite;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
