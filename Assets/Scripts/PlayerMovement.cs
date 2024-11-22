@@ -11,9 +11,14 @@ public class PlayerMovement : MonoBehaviour
     private int jumpCount;
     private bool isFacingRigt = true;
 
-    [SerializeField] public Rigidbody2D rb;
+    private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
 
     // Update is called once per frame
     void Update()

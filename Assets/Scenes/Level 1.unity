@@ -133,7 +133,6 @@ GameObject:
   - component: {fileID: 73717342}
   - component: {fileID: 73717345}
   - component: {fileID: 73717344}
-  - component: {fileID: 73717343}
   m_Layer: 3
   m_Name: GRD2 (2)
   m_TagString: Untagged
@@ -156,20 +155,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1169203502}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &73717343
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 73717341}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a84fde2d0e2f140649a501254728da39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  zyrko: {fileID: 1804366660}
-  player: {fileID: 2133490505}
 --- !u!61 &73717344
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -278,7 +263,6 @@ GameObject:
   - component: {fileID: 131995752}
   - component: {fileID: 131995755}
   - component: {fileID: 131995754}
-  - component: {fileID: 131995753}
   m_Layer: 3
   m_Name: GRD2 (8)
   m_TagString: Untagged
@@ -301,20 +285,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1169203502}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
---- !u!114 &131995753
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 131995751}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a84fde2d0e2f140649a501254728da39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  zyrko: {fileID: 1804366660}
-  player: {fileID: 2133490505}
 --- !u!61 &131995754
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -423,7 +393,6 @@ GameObject:
   - component: {fileID: 135491681}
   - component: {fileID: 135491684}
   - component: {fileID: 135491683}
-  - component: {fileID: 135491682}
   m_Layer: 3
   m_Name: GRD2 (7)
   m_TagString: Untagged
@@ -446,20 +415,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1169203502}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &135491682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 135491680}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a84fde2d0e2f140649a501254728da39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  zyrko: {fileID: 1804366660}
-  player: {fileID: 2133490505}
 --- !u!61 &135491683
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -652,7 +607,6 @@ GameObject:
   - component: {fileID: 421796276}
   - component: {fileID: 421796279}
   - component: {fileID: 421796278}
-  - component: {fileID: 421796277}
   m_Layer: 3
   m_Name: GRD2 (6)
   m_TagString: Untagged
@@ -675,20 +629,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1169203502}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!114 &421796277
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 421796275}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a84fde2d0e2f140649a501254728da39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  zyrko: {fileID: 1804366660}
-  player: {fileID: 2133490505}
 --- !u!61 &421796278
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1096,7 +1036,6 @@ GameObject:
   - component: {fileID: 580603681}
   - component: {fileID: 580603684}
   - component: {fileID: 580603683}
-  - component: {fileID: 580603682}
   m_Layer: 3
   m_Name: GRD2
   m_TagString: Untagged
@@ -1119,20 +1058,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1169203502}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &580603682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 580603680}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a84fde2d0e2f140649a501254728da39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  zyrko: {fileID: 1804366660}
-  player: {fileID: 2133490505}
 --- !u!61 &580603683
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1241,7 +1166,6 @@ GameObject:
   - component: {fileID: 775375904}
   - component: {fileID: 775375907}
   - component: {fileID: 775375906}
-  - component: {fileID: 775375905}
   m_Layer: 3
   m_Name: GRD2 (4)
   m_TagString: Untagged
@@ -1264,20 +1188,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1169203502}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &775375905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 775375903}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a84fde2d0e2f140649a501254728da39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  zyrko: {fileID: 1804366660}
-  player: {fileID: 2133490505}
 --- !u!61 &775375906
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1416,12 +1326,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 851330465}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7555d42e26a0bce4a971ef785b24e419, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
   groundCheck: {fileID: 0}
   groundLayer:
     serializedVersion: 2
@@ -1453,7 +1362,6 @@ GameObject:
   - component: {fileID: 911784513}
   - component: {fileID: 911784516}
   - component: {fileID: 911784515}
-  - component: {fileID: 911784514}
   m_Layer: 3
   m_Name: GRD2 (1)
   m_TagString: Untagged
@@ -1476,20 +1384,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1169203502}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &911784514
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 911784512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a84fde2d0e2f140649a501254728da39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  zyrko: {fileID: 1804366660}
-  player: {fileID: 2133490505}
 --- !u!61 &911784515
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1598,7 +1492,6 @@ GameObject:
   - component: {fileID: 1026861514}
   - component: {fileID: 1026861517}
   - component: {fileID: 1026861516}
-  - component: {fileID: 1026861515}
   m_Layer: 3
   m_Name: GRD2 (3)
   m_TagString: Untagged
@@ -1621,20 +1514,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1169203502}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1026861515
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1026861513}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a84fde2d0e2f140649a501254728da39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  zyrko: {fileID: 1804366660}
-  player: {fileID: 2133490505}
 --- !u!61 &1026861516
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2090,20 +1969,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1097300729
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1097300725}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a84fde2d0e2f140649a501254728da39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  zyrko: {fileID: 1804366660}
-  player: {fileID: 2133490505}
 --- !u!1 &1169203501
 GameObject:
   m_ObjectHideFlags: 0
@@ -2443,7 +2308,6 @@ GameObject:
   - component: {fileID: 1499298420}
   - component: {fileID: 1499298423}
   - component: {fileID: 1499298422}
-  - component: {fileID: 1499298421}
   m_Layer: 3
   m_Name: GRD2 (5)
   m_TagString: Untagged
@@ -2466,20 +2330,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1169203502}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
---- !u!114 &1499298421
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1499298419}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a84fde2d0e2f140649a501254728da39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  zyrko: {fileID: 1804366660}
-  player: {fileID: 2133490505}
 --- !u!61 &1499298422
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2677,6 +2527,8 @@ MonoBehaviour:
   currentHealth: 0
   maxHealth: 10
   isPlayer: 1
+  iFramesDuration: 0
+  numberOfFlashes: 0
 --- !u!1 &1688779775
 GameObject:
   m_ObjectHideFlags: 0
@@ -2860,7 +2712,6 @@ Transform:
   m_Children:
   - {fileID: 1043500148}
   - {fileID: 2064440785}
-  - {fileID: 1640959997}
   - {fileID: 1864341968}
   - {fileID: 1704205800}
   - {fileID: 375494419}
@@ -3057,6 +2908,8 @@ MonoBehaviour:
   currentHealth: 0
   maxHealth: 3
   isPlayer: 0
+  iFramesDuration: 0
+  numberOfFlashes: 0
 --- !u!1 &1864341967
 GameObject:
   m_ObjectHideFlags: 0
@@ -3272,7 +3125,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &2133490501
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3399,7 +3252,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7555d42e26a0bce4a971ef785b24e419, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 2133490500}
   groundCheck: {fileID: 1215570386}
   groundLayer:
     serializedVersion: 2
@@ -3419,6 +3271,8 @@ MonoBehaviour:
   currentHealth: 0
   maxHealth: 10
   isPlayer: 1
+  iFramesDuration: 0
+  numberOfFlashes: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
