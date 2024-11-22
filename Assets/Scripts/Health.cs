@@ -8,10 +8,16 @@ public class Health : MonoBehaviour
     public int currentHealth;
     public int maxHealth = 10;
     public bool isPlayer;
+
+    [Header("iFrames")]
+    public float iFramesDuration;
+    public int numberOfFlashes;
+    private SpriteRenderer sprite;
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
+        sprite = GetComponent<SpriteRenderer>();
     }
 
     public void TakeDamage(int amt)
@@ -28,6 +34,10 @@ public class Health : MonoBehaviour
                 EnemyDeath();
             }
         }
+        else if (isPlayer)
+        {
+            //StartCoroutine(Invulnerability());
+        }
     }
 
     public void PlayerDeath()
@@ -39,4 +49,6 @@ public class Health : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
+
 }

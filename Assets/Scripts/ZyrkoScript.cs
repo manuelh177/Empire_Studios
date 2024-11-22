@@ -20,14 +20,19 @@ public class ZyrkoScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player"))
-        {
-            player.TakeDamage(1);
-        }
+
 
         if (collision.CompareTag("Projectile"))
         {
             zyrko.TakeDamage(1);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+                if(collision.collider.CompareTag("Player"))
+        {
+            player.TakeDamage(1);
         }
     }
 }
