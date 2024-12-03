@@ -1094,6 +1094,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6393236549492100530, guid: e1f399684cb904b71bab7ca2c660cedd, type: 3}
+      propertyPath: flashDuration
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 7351372309231801799, guid: e1f399684cb904b71bab7ca2c660cedd, type: 3}
       propertyPath: m_SortingOrder
       value: 5
@@ -1429,6 +1433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a84fde2d0e2f140649a501254728da39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flashDuration: 0.2
 --- !u!50 &817114594
 Rigidbody2D:
   serializedVersion: 4
@@ -2479,6 +2484,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6393236549492100530, guid: e1f399684cb904b71bab7ca2c660cedd, type: 3}
+      propertyPath: flashDuration
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 7351372309231801799, guid: e1f399684cb904b71bab7ca2c660cedd, type: 3}
       propertyPath: m_SortingOrder
       value: 5
@@ -2613,11 +2622,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4275889301522544197, guid: e1f399684cb904b71bab7ca2c660cedd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 22.18
+      value: 21.33
       objectReference: {fileID: 0}
     - target: {fileID: 4275889301522544197, guid: e1f399684cb904b71bab7ca2c660cedd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.13
+      value: 9.05
       objectReference: {fileID: 0}
     - target: {fileID: 4275889301522544197, guid: e1f399684cb904b71bab7ca2c660cedd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2651,10 +2660,58 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5784650747214790839, guid: e1f399684cb904b71bab7ca2c660cedd, type: 3}
+      propertyPath: iFramesDuration
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5784650747214790839, guid: e1f399684cb904b71bab7ca2c660cedd, type: 3}
+      propertyPath: numberOfFlashes
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5983973416041002517, guid: e1f399684cb904b71bab7ca2c660cedd, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 3.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 5983973416041002517, guid: e1f399684cb904b71bab7ca2c660cedd, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 4.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 6393236549492100530, guid: e1f399684cb904b71bab7ca2c660cedd, type: 3}
+      propertyPath: flashDuration
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7351372309231801799, guid: e1f399684cb904b71bab7ca2c660cedd, type: 3}
+      propertyPath: m_Size.x
+      value: 3.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 7351372309231801799, guid: e1f399684cb904b71bab7ca2c660cedd, type: 3}
+      propertyPath: m_Size.y
+      value: 4.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 7351372309231801799, guid: e1f399684cb904b71bab7ca2c660cedd, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7351372309231801799, guid: e1f399684cb904b71bab7ca2c660cedd, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7351372309231801799, guid: e1f399684cb904b71bab7ca2c660cedd, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7351372309231801799, guid: e1f399684cb904b71bab7ca2c660cedd, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7351372309231801799, guid: e1f399684cb904b71bab7ca2c660cedd, type: 3}
       propertyPath: m_SortingOrder
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7351372309231801799, guid: e1f399684cb904b71bab7ca2c660cedd, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 7960551342395578525, guid: e1f399684cb904b71bab7ca2c660cedd, type: 3}
       propertyPath: m_Name
       value: Zyrko

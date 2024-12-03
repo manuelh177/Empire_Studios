@@ -5,11 +5,14 @@ using UnityEngine;
 public class ZyrkoScript : MonoBehaviour
 {
     private Health zyrko;
+    private SpriteRenderer sp;
+    public float flashDuration;
     //public Health player;
     // Start is called before the first frame update
     void Start()
     {
         zyrko = GetComponent<Health>();
+        sp = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -25,6 +28,7 @@ public class ZyrkoScript : MonoBehaviour
         if (collision.CompareTag("Projectile"))
         {
             zyrko.TakeDamage(1);
+            StartCoroutine(DamageFlash());
         }
     }
 
@@ -39,5 +43,13 @@ public class ZyrkoScript : MonoBehaviour
             }
             
         }
+    }
+
+    private IEnumerator DamageFlash()
+    {
+            sp.color = new Color(1, 0, 0, 0.5f);
+            yield return new WaitForSeconds(flashDuration);
+            sp.color = new Color(1, 1, 1, 1);
+            yield return new WaitForSeconds(flashDuration);
     }
 }
