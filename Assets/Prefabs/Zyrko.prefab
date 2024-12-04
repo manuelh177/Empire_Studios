@@ -172,8 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a84fde2d0e2f140649a501254728da39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zyrko: {fileID: 5784650747214790839}
-  player: {fileID: 0}
+  flashDuration: 0.2
 --- !u!114 &5784650747214790839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,5 +188,6 @@ MonoBehaviour:
   currentHealth: 3
   maxHealth: 3
   isPlayer: 0
+  healthBar: {fileID: 0}
   iFramesDuration: 0
   numberOfFlashes: 0
