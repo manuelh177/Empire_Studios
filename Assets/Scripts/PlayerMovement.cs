@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     private float jumpingPower = 5f;
     private int jumpCount;
     private bool isFacingRigt = true;
+    private Transform gun;
 
     private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
@@ -18,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        gun = GameObject.FindGameObjectWithTag("Gun").transform;
     }
 
     // Update is called once per frame
@@ -71,6 +73,9 @@ public class PlayerMovement : MonoBehaviour
             Vector3 localScale = transform.localScale;
             localScale.x *= -1f;
             transform.localScale = localScale;
+            Vector3 gunScale = gun.localScale;
+            gunScale *= -1f;
+            gun.localScale = gunScale;
         }
 
 
