@@ -7,12 +7,14 @@ public class ZyrkoScript : MonoBehaviour
     private Health zyrko;
     private SpriteRenderer sp;
     public float flashDuration;
+    private Transform transf;
     //public Health player;
     // Start is called before the first frame update
     void Start()
     {
         zyrko = GetComponent<Health>();
         sp = GetComponent<SpriteRenderer>();
+        transf = GetComponent<Transform>();
     }
 
     // Update is called once per frame
@@ -41,7 +43,7 @@ public class ZyrkoScript : MonoBehaviour
             {
                 healthComponent.TakeDamage(1);
             }
-            
+            StartCoroutine(PlayerKnockback(collision));
         }
     }
 
@@ -51,5 +53,20 @@ public class ZyrkoScript : MonoBehaviour
             yield return new WaitForSeconds(flashDuration);
             sp.color = new Color(1, 1, 1, 1);
             yield return new WaitForSeconds(flashDuration);
+    }
+
+    private IEnumerator PlayerKnockback(Collision2D collision)
+    {
+        collision.collider.GetComponent<PlayerMovement>().enabled = false;
+        if (transf.position.x > collision.collider.transform.position.x)
+        {
+            collision.collider.attachedRigidbody.velocity = new Vector2(-1f, 1f);
+        }
+        else
+        {
+            collision.collider.attachedRigidbody.velocity = new Vector2(1f, 1f);
+        }
+        yield return new WaitForSeconds(0.2f);
+        collision.collider.GetComponent<PlayerMovement>().enabled = true;
     }
 }
