@@ -6,13 +6,14 @@ public class PlayerMovement : MonoBehaviour
 {
 
     private float horizontal;
-    private float speed = 1.25f;
-    private float jumpingPower = 5f;
+    public float speed;
+    public float jumpingPower;
     private int jumpCount;
     private bool isFacingRigt = true;
     private Transform gun;
 
     private Rigidbody2D rb;
+    private float runSpeed;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
 
