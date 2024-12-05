@@ -314,7 +314,7 @@ Transform:
   m_GameObject: {fileID: 331872542}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.48, y: 8.54, z: -10}
+  m_LocalPosition: {x: 20.61, y: 8.7, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -354,6 +354,11 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &512669872 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1821908771296823337, guid: a2ee02f2289f84a748bdf06c683224c3, type: 3}
+  m_PrefabInstance: {fileID: 1528701208}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &550421853 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3696134779929681577, guid: a2ee02f2289f84a748bdf06c683224c3, type: 3}
@@ -732,6 +737,7 @@ GameObject:
   - component: {fileID: 1405473620}
   - component: {fileID: 1405473626}
   - component: {fileID: 1405473627}
+  - component: {fileID: 1405473628}
   m_Layer: 7
   m_Name: Flyer
   m_TagString: Untagged
@@ -945,6 +951,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flashDuration: 0.2
+--- !u!114 &1405473628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405473619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 808179b6d4e637049b047744d4ed6b1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 512669872}
+  speed: 1.5
 --- !u!1 &1452846283
 GameObject:
   m_ObjectHideFlags: 0
@@ -1010,7 +1030,7 @@ Transform:
   m_GameObject: {fileID: 1452846283}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.48, y: 8.54, z: -10}
+  m_LocalPosition: {x: 20.61, y: 8.7, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1029,13 +1049,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3264111358937495554, guid: a2ee02f2289f84a748bdf06c683224c3, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3264111358937495554, guid: a2ee02f2289f84a748bdf06c683224c3, type: 3}
+      propertyPath: jumpingPower
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3696134779929681577, guid: a2ee02f2289f84a748bdf06c683224c3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.48
+      value: 20.61
       objectReference: {fileID: 0}
     - target: {fileID: 3696134779929681577, guid: a2ee02f2289f84a748bdf06c683224c3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.54
+      value: 8.7
       objectReference: {fileID: 0}
     - target: {fileID: 3696134779929681577, guid: a2ee02f2289f84a748bdf06c683224c3, type: 3}
       propertyPath: m_LocalPosition.z
