@@ -15,6 +15,7 @@ public class Shooting : MonoBehaviour
     public bool canFire;
     private float timer;
     public float timeBetweenFiring;
+    public AudioSource gunSFX;
 
 
     // Start is called before the first frame update
@@ -53,6 +54,7 @@ public class Shooting : MonoBehaviour
 
             canFire = false;
             Instantiate(bullet, bulletTransform.position, Quaternion.identity);
+            gunSFX.Play();
 
         }
     }
