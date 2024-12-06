@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 7351372309231801799}
   - component: {fileID: 8945990349194776012}
   - component: {fileID: 5983973416041002517}
-  - component: {fileID: 6393236549492100530}
   - component: {fileID: 5784650747214790839}
+  - component: {fileID: 1734429607573669617}
   m_Layer: 7
   m_Name: Zyrko
   m_TagString: Untagged
@@ -74,8 +74,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1000814815
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1a50289f6f614af42b098e6bc6134185, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -160,20 +160,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.8746598, y: 4.05}
   m_EdgeRadius: 0
---- !u!114 &6393236549492100530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7960551342395578525}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a84fde2d0e2f140649a501254728da39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  zyrko: {fileID: 5784650747214790839}
-  player: {fileID: 0}
 --- !u!114 &5784650747214790839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,5 +175,19 @@ MonoBehaviour:
   currentHealth: 3
   maxHealth: 3
   isPlayer: 0
+  healthBar: {fileID: 0}
   iFramesDuration: 0
   numberOfFlashes: 0
+--- !u!114 &1734429607573669617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7960551342395578525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a84fde2d0e2f140649a501254728da39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashDuration: 0.2

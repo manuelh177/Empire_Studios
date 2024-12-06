@@ -10,7 +10,7 @@ using UnityEngine;
 public class Boss_Walk : StateMachineBehaviour
 {
     public float speed = 1.5f;
-    public float attackRange = 3f;
+    private float distance;
 
     Transform player;
     Rigidbody2D rb;
@@ -34,16 +34,16 @@ public class Boss_Walk : StateMachineBehaviour
         Vector2 newPos = Vector2.MoveTowards(rb.position, target, speed * Time.fixedDeltaTime);
         rb.MovePosition(newPos);
 
-        if (Vector2.Distance(player.position, rb.position) <= attackRange){
+        distance = Vector2.Distance(player.position, rb.position);
 
-            animator.SetTrigger("Attack");
-        }
+        animator.SetFloat("DistanceToPlayer", distance);
+        
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        animator.ResetTrigger("Attack");
+        animator.SetFloat("DistanceToPlayer", 99999);
     }
 
 

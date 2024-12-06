@@ -10,7 +10,7 @@ public class Health : MonoBehaviour
     public bool isPlayer;
 
     [Header("UI")]
-    public HealthBar healthBar;
+    [SerializeField] private HealthBar healthBar;
 
     [Header("iFrames")]
     public float iFramesDuration;
@@ -39,17 +39,23 @@ public class Health : MonoBehaviour
             if (isPlayer)
             {
                 PlayerDeath();
+                healthBar.setHealth(currentHealth);
             }
             else
             {
                 EnemyDeath();
             }
+
         }
         else if (isPlayer)
         {
             StartCoroutine(Invulnerability());
         }
-        healthBar.setHealth(currentHealth);
+        if(healthBar != null)
+        {
+            healthBar.setHealth(currentHealth);
+        }
+            
     }
 
     public void PlayerDeath()

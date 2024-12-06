@@ -6,18 +6,21 @@ public class PlayerMovement : MonoBehaviour
 {
 
     private float horizontal;
-    private float speed = 1.25f;
-    private float jumpingPower = 5f;
+    public float speed;
+    public float jumpingPower;
     private int jumpCount;
     private bool isFacingRigt = true;
+    private Transform gun;
 
     private Rigidbody2D rb;
+    private float runSpeed;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        gun = GameObject.FindGameObjectWithTag("Gun").transform;
     }
 
     // Update is called once per frame
@@ -71,6 +74,9 @@ public class PlayerMovement : MonoBehaviour
             Vector3 localScale = transform.localScale;
             localScale.x *= -1f;
             transform.localScale = localScale;
+            Vector3 gunScale = gun.localScale;
+            gunScale *= -1f;
+            gun.localScale = gunScale;
         }
 
 
