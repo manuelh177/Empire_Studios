@@ -10,13 +10,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1116618920763382098}
   - component: {fileID: 2516810783971483295}
-  m_Layer: 6
+  m_Layer: 5
   m_Name: ShieldBubble
   m_TagString: ShieldPowerUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1116618920763382098
 Transform:
   m_ObjectHideFlags: 0
