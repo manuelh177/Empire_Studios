@@ -27,11 +27,34 @@ public class WeaponScript : MonoBehaviour
         }
 
         guns[0].SetActive(true);
+        currentGun = guns[0];
+        currentWeaponIndex = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        //next weapon
+        if(Input.GetKeyDown(KeyCode.E))
+        {
+            if(currentWeaponIndex < totalWeapons - 1)
+            {
+                guns[currentWeaponIndex].SetActive(false);
+                currentWeaponIndex += 1;
+                guns[currentWeaponIndex].SetActive(true);
+            }
+        }
+
+
+        //previous weapon
+        if(Input.GetKeyDown(KeyCode.Q))
+        {
+            if(currentWeaponIndex > 0)
+            {
+                guns[currentWeaponIndex].SetActive(false);
+                currentWeaponIndex -= 1;
+                guns[currentWeaponIndex].SetActive(true);
+            }
+        }
     }
 }
