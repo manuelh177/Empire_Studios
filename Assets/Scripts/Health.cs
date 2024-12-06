@@ -50,9 +50,12 @@ public class Health : MonoBehaviour
         else if (isPlayer)
         {
             StartCoroutine(Invulnerability());
+        }
+        if(healthBar != null)
+        {
             healthBar.setHealth(currentHealth);
         }
-        
+            
     }
 
     public void PlayerDeath()
