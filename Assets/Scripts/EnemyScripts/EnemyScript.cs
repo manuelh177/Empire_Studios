@@ -57,7 +57,10 @@ public class ZyrkoScript : MonoBehaviour
 
     private IEnumerator PlayerKnockback(Collision2D collision)
     {
-        collision.collider.GetComponent<PlayerMovement>().enabled = false;
+        PlayerMovement playerMove = collision.collider.GetComponent<PlayerMovement>();
+        if(playerMove != null)
+        {
+        playerMove.enabled = false;
         if (transf.position.x > collision.collider.transform.position.x)
         {
             collision.collider.attachedRigidbody.velocity = new Vector2(-1f, 1f);
@@ -67,6 +70,8 @@ public class ZyrkoScript : MonoBehaviour
             collision.collider.attachedRigidbody.velocity = new Vector2(1f, 1f);
         }
         yield return new WaitForSeconds(0.2f);
-        collision.collider.GetComponent<PlayerMovement>().enabled = true;
+        playerMove.enabled = true;
+        }
+
     }
 }
