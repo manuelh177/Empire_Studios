@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2103504592854718941}
   - component: {fileID: 7062018236924111310}
   - component: {fileID: 983578874072982366}
-  - component: {fileID: 3169620702997364020}
+  - component: {fileID: 5724131186260289597}
   m_Layer: 7
   m_Name: ZyrkoWithGun
   m_TagString: Untagged
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 9
   m_Sprite: {fileID: 21300000, guid: 1a50289f6f614af42b098e6bc6134185, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -215,7 +215,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &3169620702997364020
+--- !u!114 &5724131186260289597
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -224,10 +224,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 237533976062956923}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a84fde2d0e2f140649a501254728da39, type: 3}
+  m_Script: {fileID: 11500000, guid: b3084202678254e3790dc4e042a25066, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashDuration: 0
+  bullet: {fileID: 4183983870595458108, guid: 0b73c57a765d64017ae6347b0cd52976, type: 3}
+  gun: {fileID: 1329220483850760191}
+  timeBetweenShots: 2.5
 --- !u!1 &4429929939589227767
 GameObject:
   m_ObjectHideFlags: 0
@@ -238,7 +240,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1329220483850760191}
   - component: {fileID: 4585680432642094545}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ZyrkoGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -254,8 +256,8 @@ Transform:
   m_GameObject: {fileID: 4429929939589227767}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.1, y: -0.77373123, z: 0}
-  m_LocalScale: {x: -0.4083103, y: 0.40831026, z: 0.40831026}
+  m_LocalPosition: {x: -0.87134, y: -0.77373123, z: 0}
+  m_LocalScale: {x: -0.53823465, y: 0.5382346, z: 0.5382346}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 852498722541919307}
@@ -300,9 +302,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: ea47d745e2ad7d943a73edf031d5ca31, type: 3}
-  m_Color: {r: 0.79039, g: 0, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
