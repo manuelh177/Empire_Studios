@@ -5,13 +5,20 @@ using UnityEngine;
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenu;
-    private Shooting gunComponent;
+    public int numberOfGuns;
+    private Shooting[] gunComponent;
+    
     // Start is called before the first frame update
     void Start()
     {
         pauseMenu.SetActive(false);
-        gunComponent = GameObject.FindGameObjectWithTag("Gun").GetComponent<Shooting>();
-        gunComponent.enabled = true;
+        for(int i = 0; i < numberOfGuns; i++)
+        {
+            gunComponent[i] = GameObject.FindGameObjectsWithTag("Gun")[i].GetComponent<Shooting>();
+            gunComponent[i].enabled = true;
+        }
+         
+        
     }
 
     // Update is called once per frame
@@ -29,7 +36,11 @@ public class PauseMenu : MonoBehaviour
                 Time.timeScale = 1f;
                 pauseMenu.SetActive(false);
             }
-            gunComponent.enabled = !gunComponent.enabled;
+            for(int i = 0; i < numberOfGuns; i++)
+            {
+                gunComponent[i].enabled = !gunComponent[i].enabled;
+            }
+
         }
     }
 

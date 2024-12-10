@@ -11414,8 +11414,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -672635547
+  m_SortingLayer: -1
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: a22f1b66dbafddd4d959c6702d5a0fe6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -14685,8 +14685,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -672635547
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a69e1fe50bdda7d4ea863e849f159554, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -19532,6 +19532,10 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 878852734}
+    - target: {fileID: 2967770990724739741, guid: 8368317c97254674ba0eba54a550c0f7, type: 3}
+      propertyPath: m_TagString
+      value: Gun
+      objectReference: {fileID: 0}
     - target: {fileID: 3457950078776749592, guid: 8368317c97254674ba0eba54a550c0f7, type: 3}
       propertyPath: shieldBubble
       value: 
@@ -19540,6 +19544,10 @@ PrefabInstance:
       propertyPath: gunSFX
       value: 
       objectReference: {fileID: 2136848238}
+    - target: {fileID: 5143091676046150995, guid: 8368317c97254674ba0eba54a550c0f7, type: 3}
+      propertyPath: m_TagString
+      value: Gun
+      objectReference: {fileID: 0}
     - target: {fileID: 6984026202796462782, guid: 8368317c97254674ba0eba54a550c0f7, type: 3}
       propertyPath: m_Name
       value: Player
