@@ -8358,7 +8358,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1540638396}
   speed: 1.5
-  distToChase: 4
+  distToChase: 1.25
 --- !u!1 &714822070
 GameObject:
   m_ObjectHideFlags: 0
@@ -13259,7 +13259,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1540638396}
   speed: 1.5
-  distToChase: 4
+  distToChase: 1.25
 --- !u!1 &1033313000
 GameObject:
   m_ObjectHideFlags: 0
@@ -15745,7 +15745,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1540638396}
   speed: 1.5
-  distToChase: 4
+  distToChase: 1.25
 --- !u!1 &1222505444
 GameObject:
   m_ObjectHideFlags: 0
@@ -17618,7 +17618,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1540638396}
   speed: 1.5
-  distToChase: 1
+  distToChase: 1.25
 --- !u!1 &1386715472
 GameObject:
   m_ObjectHideFlags: 0
@@ -19533,6 +19533,14 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 878852734}
+    - target: {fileID: 616440355674892090, guid: 8368317c97254674ba0eba54a550c0f7, type: 3}
+      propertyPath: iFramesDuration
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 616440355674892090, guid: 8368317c97254674ba0eba54a550c0f7, type: 3}
+      propertyPath: numberOfFlashes
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2967770990724739741, guid: 8368317c97254674ba0eba54a550c0f7, type: 3}
       propertyPath: m_TagString
       value: Gun
@@ -19596,6 +19604,10 @@ PrefabInstance:
     - target: {fileID: 8019693323658346895, guid: 8368317c97254674ba0eba54a550c0f7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8440250664264074938, guid: 8368317c97254674ba0eba54a550c0f7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8548414642550589398, guid: 8368317c97254674ba0eba54a550c0f7, type: 3}
       propertyPath: speed
@@ -26760,7 +26772,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 66bed27cd563d42ccbdb634065fc27dc, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.547
   m_Pitch: 1
   Loop: 0
   Mute: 0
