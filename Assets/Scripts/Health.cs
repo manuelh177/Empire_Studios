@@ -24,7 +24,9 @@ public class Health : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
+
         sprite = GetComponent<SpriteRenderer>();
+
         if(healthBar != null)
         {
             healthBar.setMaxHealth(maxHealth);
@@ -84,5 +86,10 @@ public class Health : MonoBehaviour
             yield return new WaitForSeconds(iFramesDuration / (numberOfFlashes * 2));
         }
         Physics2D.IgnoreLayerCollision(6, 7, false);
+        if (isPlayer)
+        {
+            var playerMove = GetComponent<PlayerMovement>();
+            playerMove.enabled = true;
+        }
     }
 }
