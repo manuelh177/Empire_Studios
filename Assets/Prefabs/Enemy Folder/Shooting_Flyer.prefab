@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4494778821401691977}
   - component: {fileID: 5318310329291856878}
   - component: {fileID: 1386901241262032394}
+  - component: {fileID: 7019330861413967992}
   m_Layer: 7
   m_Name: Shooting_Flyer
   m_TagString: Untagged
@@ -108,10 +109,10 @@ BoxCollider2D:
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 447
   m_ForceReceiveLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 447
   m_ContactCaptureLayers:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -121,7 +122,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.020980835, y: -0.00000333786}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -132,7 +133,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.32, y: 3.88}
+  m_Size: {x: 1.9212532, y: 1.4463377}
   m_EdgeRadius: 0
 --- !u!50 &3349761831950906991
 Rigidbody2D:
@@ -194,8 +195,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ec3f6008a0d4df89a5739125952323, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 1
-  maxHealth: 1
+  currentHealth: 10
+  maxHealth: 10
   isPlayer: 0
   isSpawner: 0
   healthBar: {fileID: 0}
@@ -214,3 +215,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flashDuration: 0.2
+--- !u!114 &7019330861413967992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5174044049165742967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3084202678254e3790dc4e042a25066, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 4183983870595458108, guid: dbdfb1f56219eb4499b5509415401d1e, type: 3}
+  gun: {fileID: 8446751589604252457}
+  timeBetweenShots: 1

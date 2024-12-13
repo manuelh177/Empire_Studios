@@ -1113,9 +1113,11 @@ MonoBehaviour:
   pointB: {fileID: 472380709}
   speed: 3
   bulletPrefab: {fileID: 4183983870595458108, guid: aa10a3dc411cd0443ae686bf765090bf, type: 3}
+  enemyPrefab: {fileID: 0}
   firePoint: {fileID: 1235524838}
   minShootInterval: 2
   maxShootInterval: 5
+  timeBetweenShots: 0
 --- !u!1001 &1104679952
 PrefabInstance:
   m_ObjectHideFlags: 0
