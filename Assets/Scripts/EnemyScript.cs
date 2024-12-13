@@ -29,7 +29,7 @@ public class EnemyScript : MonoBehaviour
 
         if (collision.CompareTag("Projectile"))
         {
-            zyrko.TakeDamage(1);
+            zyrko.TakeDamage(collision.GetComponent<bulletScript>().damage);
             StartCoroutine(DamageFlash());
         }
     }
