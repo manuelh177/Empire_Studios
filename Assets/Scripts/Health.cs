@@ -8,6 +8,7 @@ public class Health : MonoBehaviour
     public int currentHealth;
     public int maxHealth = 10;
     public bool isPlayer;
+    [SerializeField] private bool isSpawner;
 
     [Header("UI")]
     [SerializeField] private HealthBar healthBar;
@@ -65,7 +66,11 @@ public class Health : MonoBehaviour
 
     public void EnemyDeath()
     {
+        if(isSpawner){
+            GetComponent<SpawnOnDeath>().Die();
+        }
         Destroy(gameObject);
+
     }
 
     private IEnumerator Invulnerability()
