@@ -91,9 +91,9 @@ public class PlayerMovement : MonoBehaviour
         if (collision.collider.CompareTag("SpeedPowerUp"))
         {
             Destroy(collision.gameObject);
-            speed = 20000f;
+            //speed = 20000f;
             StartCoroutine(speedBoost());
-            speed = 3f;
+            //speed = 3f;
         }
     }
 
@@ -101,6 +101,8 @@ public class PlayerMovement : MonoBehaviour
     {
 
         speedBubble.SetActive(true);
+        float temp = speed;
+        speed = speedUp;
         yield return new WaitForSeconds(duration * 0.7f);
         for(int i = 0; i < 3; i++)
         {
@@ -110,7 +112,7 @@ public class PlayerMovement : MonoBehaviour
             yield return new WaitForSeconds(duration * 0.05f);
         }
         speedBubble.SetActive(false);
-        speed = 3f;
+        speed = temp;
     }
 
 }

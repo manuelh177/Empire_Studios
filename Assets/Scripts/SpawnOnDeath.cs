@@ -14,8 +14,8 @@ public class SpawnOnDeath : MonoBehaviour
         if (smallerEnemyPrefab != null)
         {
             // Spawn two smaller enemies at slightly offset positions
-            Instantiate(smallerEnemyPrefab, transform.position + new Vector3(1, 0, 0), Quaternion.identity);
-            Instantiate(smallerEnemyPrefab, transform.position + new Vector3(-1, 0, 0), Quaternion.identity);
+            Instantiate(smallerEnemyPrefab, transform.position + new Vector3(0.3f, 0, 0), Quaternion.identity);
+            Instantiate(smallerEnemyPrefab, transform.position + new Vector3(-0.3f, 0, 0), Quaternion.identity);
         }
 
         // Destroy the current enemy GameObject
