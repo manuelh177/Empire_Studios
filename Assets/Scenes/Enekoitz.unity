@@ -224,6 +224,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 616440355674892090, guid: 8368317c97254674ba0eba54a550c0f7, type: 3}
+      propertyPath: currentHealth
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2584298612551001328, guid: 8368317c97254674ba0eba54a550c0f7, type: 3}
       propertyPath: guns.Array.data[0]
       value: 
@@ -909,6 +913,7 @@ GameObject:
   - component: {fileID: 962071249}
   - component: {fileID: 962071253}
   - component: {fileID: 962071254}
+  - component: {fileID: 962071255}
   m_Layer: 0
   m_Name: Boss 2
   m_TagString: Untagged
@@ -1056,7 +1061,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 962071248}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f69635baf09613444b9a93158bfe0dae, type: 3}
   m_Name: 
@@ -1091,6 +1096,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &962071255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962071248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a317b1c80b908154ab3a980f57a78f6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointA: {fileID: 124505981}
+  pointB: {fileID: 472380709}
+  speed: 3
+  bulletPrefab: {fileID: 4183983870595458108, guid: 0b73c57a765d64017ae6347b0cd52976, type: 3}
+  firePoint: {fileID: 178093604}
+  minShootInterval: 2
+  maxShootInterval: 5
 --- !u!1001 &1104679952
 PrefabInstance:
   m_ObjectHideFlags: 0
