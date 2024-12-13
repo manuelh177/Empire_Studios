@@ -173,8 +173,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10ec3f6008a0d4df89a5739125952323, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 3
-  maxHealth: 3
+  currentHealth: 10
+  maxHealth: 10
   isPlayer: 0
   isSpawner: 0
   healthBar: {fileID: 0}

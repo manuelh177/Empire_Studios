@@ -12,9 +12,11 @@ public class Boss_2_Movement : MonoBehaviour
     private Transform currentPoint;
 
     public GameObject bulletPrefab; // Reference to the bullet prefab
+    public GameObject enemyPrefab; // Reference to enemy that drops
     public Transform firePoint; // Point from where the bullet will be fired
     public float minShootInterval = 2f; // Minimum time between shots
     public float maxShootInterval = 5f; // Maximum time between shots
+    public float timeBetweenShots;
 
     private Transform player; // Player's transform
     private bool canShoot = true; // To control shooting
@@ -44,23 +46,18 @@ public class Boss_2_Movement : MonoBehaviour
 
         if (Vector2.Distance(transform.position, currentPoint.position) < 0.5f && currentPoint == pointB.transform)
         {
-            flip();
+            
             currentPoint = pointA.transform;
         }
 
         if (Vector2.Distance(transform.position, currentPoint.position) < 0.5f && currentPoint == pointA.transform)
         {
-            flip();
+            
             currentPoint = pointB.transform;
         }
     }
 
-    private void flip()
-    {
-        Vector3 localScale = transform.localScale;
-        localScale.x *= -1;
-        transform.localScale = localScale;
-    }
+
 
     private void OnDrawGizmos()
     {
@@ -72,25 +69,45 @@ public class Boss_2_Movement : MonoBehaviour
     {
         while (true)
         {
-            if (canShoot && player != null)
+            float rng = Random.Range(0, 100);
+            if(rng < 70)
             {
-                ShootAtPlayer();
+                if (canShoot && player != null)
+                {
+                    StartCoroutine(ShootAtPlayer());
+                }
             }
+            else
+            {
+                SpawnEnemy();
+            }
+            
             float waitTime = Random.Range(minShootInterval, maxShootInterval);
             yield return new WaitForSeconds(waitTime);
         }
     }
 
-    private void ShootAtPlayer()
+    private IEnumerator ShootAtPlayer()
     {
         if (bulletPrefab != null && firePoint != null)
         {
             // Create the bullet
-            GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
+            //GameObject bullet =
+            Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
+            yield return new WaitForSeconds(timeBetweenShots);
+            Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
+            yield return new WaitForSeconds(timeBetweenShots);
+            Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
 
-            // Set its direction toward the player
+
+            /*// Set its direction toward the player
             Vector2 direction = (player.position - firePoint.position).normalized;
-            bullet.GetComponent<Rigidbody2D>().velocity = direction * 5f; // Set bullet speed
+            bullet.GetComponent<Rigidbody2D>().velocity = direction * 5f; // Set bullet speed*/
         }
+    }
+
+    private void SpawnEnemy()
+    {
+        Instantiate(enemyPrefab, transform.position, Quaternion.identity);
     }
 }

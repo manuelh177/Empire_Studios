@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8378657253135599996}
   - component: {fileID: 8270041196634046611}
   - component: {fileID: 6841894124229243929}
+  - component: {fileID: -4648632617710636526}
   m_Layer: 7
   m_Name: Boss_2_Bullet
   m_TagString: Untagged
@@ -166,12 +167,22 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4183983870595458108}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 426e11ac4ee2640899c980eb42c5d738, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   force: 5
-  player: {fileID: 0}
-  speed: 5
-  distToChase: 30
+--- !u!114 &-4648632617710636526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4183983870595458108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07ef237c9adff42e29ddd0aa3bdb571d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 5
