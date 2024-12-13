@@ -7,6 +7,10 @@ public class PlayerMovement : MonoBehaviour
 
     private float horizontal;
     public float speed;
+    public float speedUp;
+    public float duration;
+    public GameObject speedBubble;
+    float speedMultiplier = 1f;
     public float jumpingPower;
     private int jumpCount;
     private bool isFacingRigt = true;
@@ -81,5 +85,35 @@ public class PlayerMovement : MonoBehaviour
 
 
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("SpeedPowerUp"))
+        {
+            Destroy(collision.gameObject);
+            //speed = 20000f;
+            StartCoroutine(speedBoost());
+            //speed = 3f;
+        }
+    }
+
+    private IEnumerator speedBoost()
+    {
+
+        speedBubble.SetActive(true);
+        float temp = speed;
+        speed = speedUp;
+        yield return new WaitForSeconds(duration * 0.7f);
+        for(int i = 0; i < 3; i++)
+        {
+            speedBubble.SetActive(false);
+            yield return new WaitForSeconds(duration * 0.05f);
+            speedBubble.SetActive(true);
+            yield return new WaitForSeconds(duration * 0.05f);
+        }
+        speedBubble.SetActive(false);
+        speed = temp;
+    }
+
 }
 

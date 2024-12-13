@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ZyrkoScript : MonoBehaviour
+public class EnemyScript : MonoBehaviour
 {
     private Health zyrko;
     private SpriteRenderer sp;
@@ -29,7 +29,7 @@ public class ZyrkoScript : MonoBehaviour
 
         if (collision.CompareTag("Projectile"))
         {
-            zyrko.TakeDamage(1);
+            zyrko.TakeDamage(collision.GetComponent<bulletScript>().damage);
             StartCoroutine(DamageFlash());
         }
     }
@@ -58,7 +58,7 @@ public class ZyrkoScript : MonoBehaviour
     private IEnumerator PlayerKnockback(Collision2D collision)
     {
         PlayerMovement playerMove = collision.collider.GetComponent<PlayerMovement>();
-        if(playerMove != null)
+        if(playerMove != null && playerMove.enabled == true)
         {
         playerMove.enabled = false;
         if (transf.position.x > collision.collider.transform.position.x)

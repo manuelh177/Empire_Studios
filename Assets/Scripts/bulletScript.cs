@@ -9,6 +9,8 @@ public class bulletScript : MonoBehaviour
     private Camera mainCam;
     private Rigidbody2D rb;
     public float force;
+    public int damage;
+
 
 
     // Start is called before the first frame update

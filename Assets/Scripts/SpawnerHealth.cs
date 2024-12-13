@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Health : MonoBehaviour
+public class SpawnerHealth : MonoBehaviour
 {
     public int currentHealth;
     public int maxHealth = 10;
     public bool isPlayer;
-    [SerializeField] private bool isSpawner;
 
     [Header("UI")]
     [SerializeField] private HealthBar healthBar;
@@ -24,9 +23,7 @@ public class Health : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
-
         sprite = GetComponent<SpriteRenderer>();
-
         if(healthBar != null)
         {
             healthBar.setMaxHealth(maxHealth);
@@ -68,9 +65,7 @@ public class Health : MonoBehaviour
 
     public void EnemyDeath()
     {
-        if(isSpawner){
-            GetComponent<SpawnOnDeath>().Die();
-        }
+        GetComponent<SpawnOnDeath>().Die();
         Destroy(gameObject);
 
     }
@@ -86,10 +81,5 @@ public class Health : MonoBehaviour
             yield return new WaitForSeconds(iFramesDuration / (numberOfFlashes * 2));
         }
         Physics2D.IgnoreLayerCollision(6, 7, false);
-        if (isPlayer)
-        {
-            var playerMove = GetComponent<PlayerMovement>();
-            playerMove.enabled = true;
-        }
     }
 }
