@@ -243,4 +243,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd457bc8a5e59844b9cfcddbe330f556, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  smallerEnemyPrefab: {fileID: 0}
+  smallerEnemyPrefab: {fileID: 7960551342395578525, guid: e1f399684cb904b71bab7ca2c660cedd, type: 3}
