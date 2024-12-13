@@ -19606,6 +19606,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 878852734}
     - target: {fileID: 616440355674892090, guid: 8368317c97254674ba0eba54a550c0f7, type: 3}
+      propertyPath: maxHealth
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 616440355674892090, guid: 8368317c97254674ba0eba54a550c0f7, type: 3}
       propertyPath: iFramesDuration
       value: 1.5
       objectReference: {fileID: 0}

@@ -58,7 +58,7 @@ public class EnemyScript : MonoBehaviour
     private IEnumerator PlayerKnockback(Collision2D collision)
     {
         PlayerMovement playerMove = collision.collider.GetComponent<PlayerMovement>();
-        if(playerMove != null)
+        if(playerMove != null && playerMove.enabled == true)
         {
         playerMove.enabled = false;
         if (transf.position.x > collision.collider.transform.position.x)
